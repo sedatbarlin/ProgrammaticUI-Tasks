@@ -75,6 +75,7 @@ class OnboardingVC: UIViewController {
     }
     
     @objc private func continueTapped() {
-        print("continue tapped")
+        let registerVC = RegisterVC()
+        self.present(destinationVC: registerVC, slideDirection: .right)
     }
 }

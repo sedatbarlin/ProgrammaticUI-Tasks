@@ -23,6 +23,9 @@
 		AF0559AF2EA17D180051871E /* Hero in Frameworks */ = {isa = PBXBuildFile; productRef = AF0559AE2EA17D180051871E /* Hero */; };
 		AF0559B22EA17E900051871E /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0559B12EA17E900051871E /* Strings.swift */; };
 		AF0559B52EA182B50051871E /* ContinueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0559B42EA182B50051871E /* ContinueButton.swift */; };
+		AF0559B82EA2463A0051871E /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0559B72EA2463A0051871E /* RegisterVC.swift */; };
+		AF0559BD2EA246A60051871E /* AuthInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0559BC2EA246A60051871E /* AuthInputView.swift */; };
+		AF0559BF2EA2475A0051871E /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0559BE2EA2475A0051871E /* UIViewController+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +45,9 @@
 		AF0559A82EA17BFE0051871E /* OnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVC.swift; sourceTree = "<group>"; };
 		AF0559B12EA17E900051871E /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		AF0559B42EA182B50051871E /* ContinueButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinueButton.swift; sourceTree = "<group>"; };
+		AF0559B72EA2463A0051871E /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		AF0559BC2EA246A60051871E /* AuthInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInputView.swift; sourceTree = "<group>"; };
+		AF0559BE2EA2475A0051871E /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +86,7 @@
 				AF05598C2EA176020051871E /* Resources */,
 				AF0559B02EA17E790051871E /* Enum */,
 				AF0559942EA1779D0051871E /* Extension */,
+				AF0559B92EA246650051871E /* View */,
 				AF05598F2EA176FD0051871E /* Scenes */,
 				AF0559982EA178660051871E /* Theme */,
 			);
@@ -142,6 +149,7 @@
 		AF0559932EA1773F0051871E /* Register */ = {
 			isa = PBXGroup;
 			children = (
+				AF0559B62EA2462A0051871E /* Controller */,
 			);
 			path = Register;
 			sourceTree = "<group>";
@@ -151,6 +159,7 @@
 			children = (
 				AF0559962EA177C70051871E /* UIFont+Ext.swift */,
 				AF0559A32EA179810051871E /* UIColor+Ext.swift */,
+				AF0559BE2EA2475A0051871E /* UIViewController+Ext.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -187,6 +196,22 @@
 			isa = PBXGroup;
 			children = (
 				AF0559B42EA182B50051871E /* ContinueButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AF0559B62EA2462A0051871E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AF0559B72EA2463A0051871E /* RegisterVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AF0559B92EA246650051871E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AF0559BC2EA246A60051871E /* AuthInputView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -276,8 +301,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF0559972EA177C70051871E /* UIFont+Ext.swift in Sources */,
+				AF0559B82EA2463A0051871E /* RegisterVC.swift in Sources */,
+				AF0559BF2EA2475A0051871E /* UIViewController+Ext.swift in Sources */,
 				AF0559B52EA182B50051871E /* ContinueButton.swift in Sources */,
 				AF0559852EA1750A0051871E /* AppDelegate.swift in Sources */,
+				AF0559BD2EA246A60051871E /* AuthInputView.swift in Sources */,
 				AF0559A92EA17BFE0051871E /* OnboardingVC.swift in Sources */,
 				AF0559A42EA179810051871E /* UIColor+Ext.swift in Sources */,
 				AF0559B22EA17E900051871E /* Strings.swift in Sources */,

@@ -12,4 +12,7 @@ enum Strings {
     static let welcomeTitle = "Welcome"
     static let subtitleLabel = "Lorem ipsum dolor sit amet consectetur.\nLorem id sit amet consectetur adipisicing elit."
     static let continueTitle = "Continue"
+    
+    //Register
+    static let signUpLabel = "Sign up"
 }
