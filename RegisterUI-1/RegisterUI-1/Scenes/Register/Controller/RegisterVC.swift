@@ -29,6 +29,11 @@ class RegisterVC: UIViewController {
         view.layer.cornerRadius = 2
         return view
     }()
+    
+    private lazy var emailInput = FormInputView(type: .email)
+    private lazy var phoneInput = FormInputView(type: .phone)
+    private lazy var passwordInput = FormInputView(type: .password)
+    private lazy var confirmPasswordInput = FormInputView(type: .confirmPassword)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,6 +60,34 @@ class RegisterVC: UIViewController {
             make.left.equalTo(signUpLabel)
             make.width.equalTo(74)
             make.height.equalTo(3)
+        }
+        
+        view.addSubview(emailInput)
+        emailInput.snp.makeConstraints { make in
+            make.top.equalTo(indicatorView.snp.bottom).offset(35)
+            make.left.right.equalToSuperview().inset(25)
+            make.height.equalTo(62)
+        }
+        
+        view.addSubview(phoneInput)
+        phoneInput.snp.makeConstraints { make in
+            make.top.equalTo(emailInput.snp.bottom).offset(24)
+            make.left.right.equalToSuperview().inset(25)
+            make.height.equalTo(62)
+        }
+        
+        view.addSubview(passwordInput)
+        passwordInput.snp.makeConstraints { make in
+            make.top.equalTo(phoneInput.snp.bottom).offset(24)
+            make.left.right.equalToSuperview().inset(25)
+            make.height.equalTo(62)
+        }
+        
+        view.addSubview(confirmPasswordInput)
+        confirmPasswordInput.snp.makeConstraints { make in
+            make.top.equalTo(passwordInput.snp.bottom).offset(24)
+            make.left.right.equalToSuperview().inset(25)
+            make.height.equalTo(62)
         }
     }
 }

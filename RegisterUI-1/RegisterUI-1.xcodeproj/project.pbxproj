@@ -24,8 +24,9 @@
 		AF0559B22EA17E900051871E /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0559B12EA17E900051871E /* Strings.swift */; };
 		AF0559B52EA182B50051871E /* ContinueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0559B42EA182B50051871E /* ContinueButton.swift */; };
 		AF0559B82EA2463A0051871E /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0559B72EA2463A0051871E /* RegisterVC.swift */; };
-		AF0559BD2EA246A60051871E /* AuthInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0559BC2EA246A60051871E /* AuthInputView.swift */; };
 		AF0559BF2EA2475A0051871E /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0559BE2EA2475A0051871E /* UIViewController+Ext.swift */; };
+		AF0559C12EA4160E0051871E /* FormInputType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0559C02EA4160E0051871E /* FormInputType.swift */; };
+		AF0559C32EA416310051871E /* FormInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0559C22EA416310051871E /* FormInputView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,8 +47,9 @@
 		AF0559B12EA17E900051871E /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		AF0559B42EA182B50051871E /* ContinueButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinueButton.swift; sourceTree = "<group>"; };
 		AF0559B72EA2463A0051871E /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
-		AF0559BC2EA246A60051871E /* AuthInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInputView.swift; sourceTree = "<group>"; };
 		AF0559BE2EA2475A0051871E /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
+		AF0559C02EA4160E0051871E /* FormInputType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormInputType.swift; sourceTree = "<group>"; };
+		AF0559C22EA416310051871E /* FormInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormInputView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				AF0559B12EA17E900051871E /* Strings.swift */,
+				AF0559C02EA4160E0051871E /* FormInputType.swift */,
 			);
 			path = Enum;
 			sourceTree = "<group>";
@@ -211,7 +214,7 @@
 		AF0559B92EA246650051871E /* View */ = {
 			isa = PBXGroup;
 			children = (
-				AF0559BC2EA246A60051871E /* AuthInputView.swift */,
+				AF0559C22EA416310051871E /* FormInputView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -304,8 +307,9 @@
 				AF0559B82EA2463A0051871E /* RegisterVC.swift in Sources */,
 				AF0559BF2EA2475A0051871E /* UIViewController+Ext.swift in Sources */,
 				AF0559B52EA182B50051871E /* ContinueButton.swift in Sources */,
+				AF0559C32EA416310051871E /* FormInputView.swift in Sources */,
 				AF0559852EA1750A0051871E /* AppDelegate.swift in Sources */,
-				AF0559BD2EA246A60051871E /* AuthInputView.swift in Sources */,
+				AF0559C12EA4160E0051871E /* FormInputType.swift in Sources */,
 				AF0559A92EA17BFE0051871E /* OnboardingVC.swift in Sources */,
 				AF0559A42EA179810051871E /* UIColor+Ext.swift in Sources */,
 				AF0559B22EA17E900051871E /* Strings.swift in Sources */,
