@@ -21,7 +21,7 @@ enum Strings {
     
     //Onboarding
     static let welcomeTitle = "Welcome"
-    static let subtitleLabel = "Lorem ipsum dolor sit amet consectetur.\nLorem id sit amet consectetur adipisicing elit."
+    static let subtitleLabel = "Welcome to our app\nWe're so glad to see you"
     static let continueTitle = "Continue"
     
     //Register
