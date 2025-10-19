@@ -15,4 +15,7 @@ enum Strings {
     
     //Register
     static let signUpLabel = "Sign up"
+    static let createAccount = "Create Account"
+    static let haveAnAccount = "Already have an account?"
+    static let signInLabel = "Sign in"
 }

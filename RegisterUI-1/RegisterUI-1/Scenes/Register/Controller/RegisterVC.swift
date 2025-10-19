@@ -34,10 +34,23 @@ class RegisterVC: UIViewController {
     private lazy var phoneInput = FormInputView(type: .phone)
     private lazy var passwordInput = FormInputView(type: .password)
     private lazy var confirmPasswordInput = FormInputView(type: .confirmPassword)
+    
+    private lazy var createAccountButton: MainButton = {
+        let button = MainButton(title: Strings.createAccount)
+        button.addTarget(self, action: #selector(creatteAccountTapped), for: .touchUpInside)
+        return button
+    }()
+    
+    private lazy var switchButton: DualTextButton = {
+        let button = DualTextButton(mainText: Strings.haveAnAccount, actionText: Strings.signInLabel)
+        button.addTarget(self, action: #selector(haveAccountTapped), for: .touchUpInside)
+        return button
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        hideKeyboardWhenTappedAround()
     }
     
     private func setupUI() {
@@ -89,5 +102,26 @@ class RegisterVC: UIViewController {
             make.left.right.equalToSuperview().inset(25)
             make.height.equalTo(62)
         }
+        
+        view.addSubview(switchButton)
+        switchButton.snp.makeConstraints { make in
+            make.bottom.equalTo(view.safeAreaLayoutGuide).offset(-16)
+            make.centerX.equalToSuperview()
+        }
+        
+        view.addSubview(createAccountButton)
+        createAccountButton.snp.makeConstraints { make in
+            make.bottom.equalTo(switchButton.snp.top).offset(-20)
+            make.left.right.equalToSuperview().inset(25)
+            make.height.equalTo(50)
+        }
+    }
+    
+    @objc private func creatteAccountTapped() {
+        print("create account tapped")
+    }
+    
+    @objc private func haveAccountTapped() {
+        print("have account tapped")
     }
 }

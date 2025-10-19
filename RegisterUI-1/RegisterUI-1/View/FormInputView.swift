@@ -75,6 +75,7 @@ final class FormInputView: UIView {
         textField.isSecureTextEntry = type.isSecure
         let eyeImageName = type.isSecure ? Images.eyeSlash : Images.eye
         eyeButton.setImage(UIImage(systemName: eyeImageName), for: .normal)
+        eyeButton.isHidden = !type.isSecure
         
         [titleLabel, iconImageView, separatorView, textField, eyeButton, underlineView].forEach { addSubview($0) }
         
@@ -98,7 +99,11 @@ final class FormInputView: UIView {
         textField.snp.makeConstraints { make in
             make.centerY.equalTo(iconImageView)
             make.left.equalTo(separatorView.snp.right).offset(8)
-            make.right.equalTo(eyeButton.snp.left).offset(-8)
+            if type.isSecure {
+                make.right.equalTo(eyeButton.snp.left).offset(-8)
+            } else {
+                make.right.equalToSuperview()
+            }
             make.height.equalTo(36)
         }
         
