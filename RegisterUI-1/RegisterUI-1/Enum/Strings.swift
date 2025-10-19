@@ -33,4 +33,5 @@ enum Strings {
     //Login
     static let loginLabel = "Login"
     static let dontHaveAnAccount = "Don’t have an Account?"
+    static let forgotPasswordLabel = "Forgot Password?"
 }

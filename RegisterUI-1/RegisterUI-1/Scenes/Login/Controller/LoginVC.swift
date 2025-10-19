@@ -33,6 +33,15 @@ class LoginVC: UIViewController {
     private lazy var emailInput = FormInputView(type: .email)
     private lazy var passwordInput = FormInputView(type: .password)
     
+    private lazy var forgotPasswordButton: UIButton = {
+        let button = UIButton()
+        button.setTitle(Strings.forgotPasswordLabel, for: .normal)
+        button.setTitleColor(.clrMainButton, for: .normal)
+        button.titleLabel?.font = .rubikSemiBold(size: 12)
+        button.addTarget(self, action: #selector(forgotPasswordTapped), for: .touchUpInside)
+        return button
+    }()
+    
     private lazy var loginButton: MainButton = {
         let button = MainButton(title: Strings.loginLabel)
         button.addTarget(self, action: #selector(loginTapped), for: .touchUpInside)
@@ -87,6 +96,12 @@ class LoginVC: UIViewController {
             make.height.equalTo(62)
         }
         
+        view.addSubview(forgotPasswordButton)
+        forgotPasswordButton.snp.makeConstraints { make in
+            make.top.equalTo(passwordInput.snp.bottom).offset(24)
+            make.right.equalTo(passwordInput)
+        }
+        
         view.addSubview(switchButton)
         switchButton.snp.makeConstraints { make in
             make.bottom.equalTo(view.safeAreaLayoutGuide).offset(-16)
@@ -108,5 +123,9 @@ class LoginVC: UIViewController {
     @objc private func dontHaveAccountTapped() {
         let registerVC = RegisterVC()
         self.present(destinationVC: registerVC, slideDirection: .right)
+    }
+    
+    @objc private func forgotPasswordTapped() {
+        print("forgot password tapped")
     }
 }
