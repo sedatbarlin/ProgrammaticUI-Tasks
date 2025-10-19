@@ -18,4 +18,8 @@ enum Strings {
     static let createAccount = "Create Account"
     static let haveAnAccount = "Already have an account?"
     static let signInLabel = "Sign in"
+    
+    //Login
+    static let loginLabel = "Login"
+    static let dontHaveAnAccount = "Don’t have an Account?"
 }

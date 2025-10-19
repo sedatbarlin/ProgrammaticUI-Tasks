@@ -122,6 +122,7 @@ class RegisterVC: UIViewController {
     }
     
     @objc private func haveAccountTapped() {
-        print("have account tapped")
+        let loginVC = LoginVC()
+        self.present(destinationVC: loginVC, slideDirection: .left)
     }
 }

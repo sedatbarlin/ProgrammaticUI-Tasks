@@ -30,6 +30,7 @@
 		AF0559C52EA513200051871E /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0559C42EA513200051871E /* Images.swift */; };
 		AF0559C72EA513D20051871E /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0559C62EA513D20051871E /* MainButton.swift */; };
 		AF0559C92EA515600051871E /* DualTextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0559C82EA515600051871E /* DualTextButton.swift */; };
+		AF0559CC2EA51A4E0051871E /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0559CB2EA51A4E0051871E /* LoginVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		AF0559C42EA513200051871E /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		AF0559C62EA513D20051871E /* MainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButton.swift; sourceTree = "<group>"; };
 		AF0559C82EA515600051871E /* DualTextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DualTextButton.swift; sourceTree = "<group>"; };
+		AF0559CB2EA51A4E0051871E /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 		AF0559922EA177390051871E /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				AF0559CA2EA51A410051871E /* Controller */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -226,6 +229,14 @@
 				AF0559C82EA515600051871E /* DualTextButton.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		AF0559CA2EA51A410051871E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AF0559CB2EA51A4E0051871E /* LoginVC.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -326,6 +337,7 @@
 				AF0559B22EA17E900051871E /* Strings.swift in Sources */,
 				AF0559C72EA513D20051871E /* MainButton.swift in Sources */,
 				AF0559862EA1750A0051871E /* SceneDelegate.swift in Sources */,
+				AF0559CC2EA51A4E0051871E /* LoginVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
