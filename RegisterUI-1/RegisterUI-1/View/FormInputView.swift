@@ -70,7 +70,7 @@ final class FormInputView: UIView {
     
     private func setupUI(type: FormInputType) {
         titleLabel.text = type.title
-        iconImageView.image = UIImage(systemName: type.iconName)
+        iconImageView.image = UIImage(named: type.iconName)
         textField.placeholder = type.placeholder
         textField.isSecureTextEntry = type.isSecure
         let eyeImageName = type.isSecure ? Images.eyeSlash : Images.eye

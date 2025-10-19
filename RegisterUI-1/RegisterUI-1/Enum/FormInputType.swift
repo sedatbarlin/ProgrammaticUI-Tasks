@@ -16,27 +16,27 @@ enum FormInputType {
     
     var title: String {
         switch self {
-        case .email: return "Email"
-        case .phone: return "Phone no"
-        case .password: return "Password"
-        case .confirmPassword: return "Confirm Password"
+        case .email: return Strings.email
+        case .phone: return Strings.phone
+        case .password: return Strings.password
+        case .confirmPassword: return Strings.confirmPassword
         }
     }
     
     var placeholder: String {
         switch self {
-        case .email: return "demo@email.com"
-        case .phone: return "+00 000-0000-000"
-        case .password: return "enter your password"
-        case .confirmPassword: return "Confirm your password"
+        case .email: return Strings.placeholderEmail
+        case .phone: return Strings.placeholderPhone
+        case .password: return Strings.placeholderPassword
+        case .confirmPassword: return Strings.placeholderConfirmPassword
         }
     }
     
     var iconName: String {
         switch self {
-        case .email: return "envelope"
-        case .phone: return "phone"
-        case .password, .confirmPassword: return "lock"
+        case .email: return Images.mail
+        case .phone: return Images.phone
+        case .password, .confirmPassword: return Images.lock
         }
     }
     

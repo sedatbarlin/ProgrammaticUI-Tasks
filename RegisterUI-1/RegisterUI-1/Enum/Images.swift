@@ -10,4 +10,7 @@ import Foundation
 enum Images {
     static let eyeSlash = "eye.slash"
     static let eye = "eye"
+    static let mail = "mail"
+    static let phone = "phone"
+    static let lock = "lock"
 }

@@ -8,6 +8,17 @@
 import Foundation
 
 enum Strings {
+    //FormInputType
+    static let email = "Email"
+    static let phone = "Phone no"
+    static let password = "Password"
+    static let confirmPassword = "Confirm Password"
+    
+    static let placeholderEmail = "demo@email.com"
+    static let placeholderPhone = "+00 000-0000-000"
+    static let placeholderPassword = "enter your password"
+    static let placeholderConfirmPassword = "confirm your password"
+    
     //Onboarding
     static let welcomeTitle = "Welcome"
     static let subtitleLabel = "Lorem ipsum dolor sit amet consectetur.\nLorem id sit amet consectetur adipisicing elit."
