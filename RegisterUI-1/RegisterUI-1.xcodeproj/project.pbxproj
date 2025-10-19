@@ -27,6 +27,7 @@
 		AF0559BF2EA2475A0051871E /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0559BE2EA2475A0051871E /* UIViewController+Ext.swift */; };
 		AF0559C12EA4160E0051871E /* FormInputType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0559C02EA4160E0051871E /* FormInputType.swift */; };
 		AF0559C32EA416310051871E /* FormInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0559C22EA416310051871E /* FormInputView.swift */; };
+		AF0559C52EA513200051871E /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0559C42EA513200051871E /* Images.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		AF0559BE2EA2475A0051871E /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
 		AF0559C02EA4160E0051871E /* FormInputType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormInputType.swift; sourceTree = "<group>"; };
 		AF0559C22EA416310051871E /* FormInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormInputView.swift; sourceTree = "<group>"; };
+		AF0559C42EA513200051871E /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +193,7 @@
 			children = (
 				AF0559B12EA17E900051871E /* Strings.swift */,
 				AF0559C02EA4160E0051871E /* FormInputType.swift */,
+				AF0559C42EA513200051871E /* Images.swift */,
 			);
 			path = Enum;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF0559972EA177C70051871E /* UIFont+Ext.swift in Sources */,
+				AF0559C52EA513200051871E /* Images.swift in Sources */,
 				AF0559B82EA2463A0051871E /* RegisterVC.swift in Sources */,
 				AF0559BF2EA2475A0051871E /* UIViewController+Ext.swift in Sources */,
 				AF0559B52EA182B50051871E /* ContinueButton.swift in Sources */,

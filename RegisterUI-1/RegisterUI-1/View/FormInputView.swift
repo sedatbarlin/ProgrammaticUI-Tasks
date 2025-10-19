@@ -49,7 +49,7 @@ final class FormInputView: UIView {
     
     private lazy var eyeButton: UIButton = {
         let button = UIButton(type: .system)
-        button.setImage(UIImage(systemName: "eye.slash"), for: .normal)
+        button.setImage(UIImage(systemName: Images.eyeSlash), for: .normal)
         button.tintColor = .clrSecondaryBlack
         button.addTarget(self, action: #selector(togglePasswordVisibility), for: .touchUpInside)
         return button
@@ -73,7 +73,7 @@ final class FormInputView: UIView {
         iconImageView.image = UIImage(systemName: type.iconName)
         textField.placeholder = type.placeholder
         textField.isSecureTextEntry = type.isSecure
-        let eyeImageName = type.isSecure ? "eye.slash" : "eye"
+        let eyeImageName = type.isSecure ? Images.eyeSlash : Images.eye
         eyeButton.setImage(UIImage(systemName: eyeImageName), for: .normal)
         
         [titleLabel, iconImageView, separatorView, textField, eyeButton, underlineView].forEach { addSubview($0) }
@@ -127,7 +127,7 @@ final class FormInputView: UIView {
     @objc private func togglePasswordVisibility() {
         isPasswordVisible.toggle()
         textField.isSecureTextEntry = !isPasswordVisible
-        let imageName = isPasswordVisible ? "eye" : "eye.slash"
+        let imageName = isPasswordVisible ? Images.eye : Images.eyeSlash
         eyeButton.setImage(UIImage(systemName: imageName), for: .normal)
         
         if let existingText = textField.text {
