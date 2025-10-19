@@ -75,7 +75,9 @@ class OnboardingVC: UIViewController {
     }
     
     @objc private func continueTapped() {
-        let registerVC = RegisterVC()
-        self.present(destinationVC: registerVC, slideDirection: .right)
+        UserDefaults.standard.set(true, forKey: "hasLaunchedBefore")
+
+        let loginVC = LoginVC()
+        self.present(destinationVC: loginVC, slideDirection: .right)
     }
 }
