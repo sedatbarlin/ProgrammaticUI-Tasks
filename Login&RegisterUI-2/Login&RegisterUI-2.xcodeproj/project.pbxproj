@@ -77,9 +77,9 @@
 			isa = PBXGroup;
 			children = (
 				AFC5B33E2EB29B9B0072A4F3 /* Application */,
+				AFC5B33F2EB29BAC0072A4F3 /* Resources */,
 				AFC5B3532EB29F1B0072A4F3 /* Extension */,
 				AFC5B3402EB29D8E0072A4F3 /* Scenes */,
-				AFC5B33F2EB29BAC0072A4F3 /* Resources */,
 				AFC5B3472EB29EE60072A4F3 /* Theme */,
 			);
 			path = "Login&RegisterUI-2";
