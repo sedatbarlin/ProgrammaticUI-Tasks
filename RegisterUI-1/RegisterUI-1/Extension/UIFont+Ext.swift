@@ -13,7 +13,7 @@ extension UIFont {
     }
     
     class func rubikLight(size: CGFloat) -> UIFont {
-        return UIFont(name: "Rubik-Medium", size: size) ?? UIFont.systemFont(ofSize: size)
+        return UIFont(name: "Rubik-Light", size: size) ?? UIFont.systemFont(ofSize: size)
     }
     
     class func rubikMedium(size: CGFloat) -> UIFont {

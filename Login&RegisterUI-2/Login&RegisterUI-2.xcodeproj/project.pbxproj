@@ -12,6 +12,12 @@
 		AFC5B33B2EB29B5D0072A4F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFC5B3312EB29B5D0072A4F3 /* Assets.xcassets */; };
 		AFC5B33D2EB29B5D0072A4F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFC5B3342EB29B5D0072A4F3 /* LaunchScreen.storyboard */; };
 		AFC5B3452EB29E0D0072A4F3 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC5B3442EB29E0D0072A4F3 /* LoginVC.swift */; };
+		AFC5B34E2EB29F0E0072A4F3 /* Manrope-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFC5B34D2EB29F0E0072A4F3 /* Manrope-SemiBold.ttf */; };
+		AFC5B34F2EB29F0E0072A4F3 /* Manrope-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFC5B3492EB29F0E0072A4F3 /* Manrope-Bold.ttf */; };
+		AFC5B3502EB29F0E0072A4F3 /* Manrope-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFC5B34A2EB29F0E0072A4F3 /* Manrope-Light.ttf */; };
+		AFC5B3512EB29F0E0072A4F3 /* Manrope-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFC5B34B2EB29F0E0072A4F3 /* Manrope-Medium.ttf */; };
+		AFC5B3522EB29F0E0072A4F3 /* Manrope-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFC5B34C2EB29F0E0072A4F3 /* Manrope-Regular.ttf */; };
+		AFC5B3552EB29F370072A4F3 /* UIFont+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC5B3542EB29F370072A4F3 /* UIFont+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		AFC5B3332EB29B5D0072A4F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AFC5B3352EB29B5D0072A4F3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		AFC5B3442EB29E0D0072A4F3 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		AFC5B3492EB29F0E0072A4F3 /* Manrope-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-Bold.ttf"; sourceTree = "<group>"; };
+		AFC5B34A2EB29F0E0072A4F3 /* Manrope-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-Light.ttf"; sourceTree = "<group>"; };
+		AFC5B34B2EB29F0E0072A4F3 /* Manrope-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-Medium.ttf"; sourceTree = "<group>"; };
+		AFC5B34C2EB29F0E0072A4F3 /* Manrope-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-Regular.ttf"; sourceTree = "<group>"; };
+		AFC5B34D2EB29F0E0072A4F3 /* Manrope-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-SemiBold.ttf"; sourceTree = "<group>"; };
+		AFC5B3542EB29F370072A4F3 /* UIFont+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +67,10 @@
 			isa = PBXGroup;
 			children = (
 				AFC5B33E2EB29B9B0072A4F3 /* Application */,
+				AFC5B3532EB29F1B0072A4F3 /* Extension */,
 				AFC5B3402EB29D8E0072A4F3 /* Scenes */,
 				AFC5B33F2EB29BAC0072A4F3 /* Resources */,
+				AFC5B3472EB29EE60072A4F3 /* Theme */,
 			);
 			path = "Login&RegisterUI-2";
 			sourceTree = "<group>";
@@ -118,6 +132,34 @@
 				AFC5B3442EB29E0D0072A4F3 /* LoginVC.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		AFC5B3472EB29EE60072A4F3 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				AFC5B3482EB29F040072A4F3 /* Font */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		AFC5B3482EB29F040072A4F3 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				AFC5B3492EB29F0E0072A4F3 /* Manrope-Bold.ttf */,
+				AFC5B34A2EB29F0E0072A4F3 /* Manrope-Light.ttf */,
+				AFC5B34B2EB29F0E0072A4F3 /* Manrope-Medium.ttf */,
+				AFC5B34C2EB29F0E0072A4F3 /* Manrope-Regular.ttf */,
+				AFC5B34D2EB29F0E0072A4F3 /* Manrope-SemiBold.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		AFC5B3532EB29F1B0072A4F3 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				AFC5B3542EB29F370072A4F3 /* UIFont+Ext.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +224,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFC5B33B2EB29B5D0072A4F3 /* Assets.xcassets in Resources */,
+				AFC5B34E2EB29F0E0072A4F3 /* Manrope-SemiBold.ttf in Resources */,
+				AFC5B34F2EB29F0E0072A4F3 /* Manrope-Bold.ttf in Resources */,
+				AFC5B3502EB29F0E0072A4F3 /* Manrope-Light.ttf in Resources */,
+				AFC5B3512EB29F0E0072A4F3 /* Manrope-Medium.ttf in Resources */,
+				AFC5B3522EB29F0E0072A4F3 /* Manrope-Regular.ttf in Resources */,
 				AFC5B33D2EB29B5D0072A4F3 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -193,6 +240,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFC5B3552EB29F370072A4F3 /* UIFont+Ext.swift in Sources */,
 				AFC5B3382EB29B5D0072A4F3 /* AppDelegate.swift in Sources */,
 				AFC5B3392EB29B5D0072A4F3 /* SceneDelegate.swift in Sources */,
 				AFC5B3452EB29E0D0072A4F3 /* LoginVC.swift in Sources */,
