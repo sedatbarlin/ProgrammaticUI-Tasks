@@ -20,6 +20,9 @@
 		AFC5B3552EB29F370072A4F3 /* UIFont+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC5B3542EB29F370072A4F3 /* UIFont+Ext.swift */; };
 		AFC5B3582EB2A0490072A4F3 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC5B3572EB2A0490072A4F3 /* RegisterVC.swift */; };
 		AFC5B35A2EB2A0760072A4F3 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC5B3592EB2A0760072A4F3 /* UIColor+Ext.swift */; };
+		AFC5B35D2EB2A0C70072A4F3 /* Hero in Frameworks */ = {isa = PBXBuildFile; productRef = AFC5B35C2EB2A0C70072A4F3 /* Hero */; };
+		AFC5B3602EB2A0DA0072A4F3 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = AFC5B35F2EB2A0DA0072A4F3 /* SnapKit */; };
+		AFC5B3622EB2A0EB0072A4F3 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC5B3612EB2A0EB0072A4F3 /* UIViewController+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +41,7 @@
 		AFC5B3542EB29F370072A4F3 /* UIFont+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Ext.swift"; sourceTree = "<group>"; };
 		AFC5B3572EB2A0490072A4F3 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		AFC5B3592EB2A0760072A4F3 /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
+		AFC5B3612EB2A0EB0072A4F3 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +49,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFC5B35D2EB2A0C70072A4F3 /* Hero in Frameworks */,
+				AFC5B3602EB2A0DA0072A4F3 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +170,7 @@
 			children = (
 				AFC5B3542EB29F370072A4F3 /* UIFont+Ext.swift */,
 				AFC5B3592EB2A0760072A4F3 /* UIColor+Ext.swift */,
+				AFC5B3612EB2A0EB0072A4F3 /* UIViewController+Ext.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -193,6 +200,8 @@
 			);
 			name = "Login&RegisterUI-2";
 			packageProductDependencies = (
+				AFC5B35C2EB2A0C70072A4F3 /* Hero */,
+				AFC5B35F2EB2A0DA0072A4F3 /* SnapKit */,
 			);
 			productName = "Login&RegisterUI-2";
 			productReference = AFC5B3182EB29B440072A4F3 /* Login&RegisterUI-2.app */;
@@ -222,6 +231,10 @@
 			);
 			mainGroup = AFC5B30F2EB29B440072A4F3;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				AFC5B35B2EB2A0C70072A4F3 /* XCRemoteSwiftPackageReference "Hero" */,
+				AFC5B35E2EB2A0DA0072A4F3 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = AFC5B3192EB29B440072A4F3 /* Products */;
 			projectDirPath = "";
@@ -256,6 +269,7 @@
 			files = (
 				AFC5B3552EB29F370072A4F3 /* UIFont+Ext.swift in Sources */,
 				AFC5B3382EB29B5D0072A4F3 /* AppDelegate.swift in Sources */,
+				AFC5B3622EB2A0EB0072A4F3 /* UIViewController+Ext.swift in Sources */,
 				AFC5B3392EB29B5D0072A4F3 /* SceneDelegate.swift in Sources */,
 				AFC5B35A2EB2A0760072A4F3 /* UIColor+Ext.swift in Sources */,
 				AFC5B3452EB29E0D0072A4F3 /* LoginVC.swift in Sources */,
@@ -472,6 +486,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AFC5B35B2EB2A0C70072A4F3 /* XCRemoteSwiftPackageReference "Hero" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/HeroTransitions/Hero.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.6.4;
+			};
+		};
+		AFC5B35E2EB2A0DA0072A4F3 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AFC5B35C2EB2A0C70072A4F3 /* Hero */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AFC5B35B2EB2A0C70072A4F3 /* XCRemoteSwiftPackageReference "Hero" */;
+			productName = Hero;
+		};
+		AFC5B35F2EB2A0DA0072A4F3 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AFC5B35E2EB2A0DA0072A4F3 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AFC5B3102EB29B440072A4F3 /* Project object */;
 }
